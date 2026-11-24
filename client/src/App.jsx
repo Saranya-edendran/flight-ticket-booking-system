@@ -1,6 +1,8 @@
+import React from "react";
 import { useEffect, useMemo, useState } from "react";
 
-const API = "http://localhost:5000/api";
+
+const API = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
 const SEAT_CHARGE = 350;
 const today = new Date().toISOString().slice(0, 10);
 
