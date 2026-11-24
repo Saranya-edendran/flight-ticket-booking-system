@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useMemo, useState } from "react";
 
 
-const API = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+const API = "https://flight-ticket-booking-system-y4j9.onrender.com/api";
 const SEAT_CHARGE = 350;
 const today = new Date().toISOString().slice(0, 10);
 
