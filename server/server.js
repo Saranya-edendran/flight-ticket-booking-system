@@ -22,6 +22,7 @@ app.use((err, _req, res, _next) => {
 });
 
 const PORT = process.env.PORT || 5000;
+console.log("MONGODB_URI exists:", !!process.env.MONGODB_URI);
 try {
   await mongoose.connect(process.env.MONGODB_URI);
   console.log("Connected to MongoDB");
